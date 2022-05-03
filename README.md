@@ -6,7 +6,7 @@ The website can be found [here](http://bobcatstudy.net).
 
 ## Documentation
 
-* You can find our SRS / Design document in [documentation/Programming Paladins - SRS and Design 1.2.docx](documentation/Programming%20Paladins%20-%20SRS%20and%20Design%201.2.docx)
+* You can find our SRS / Design document in [documentation/Programming Paladins - SRS and Design 1.3.docx](documentation/Programming%20Paladins%20-%20SRS%20and%20Design%201.3.docx)
 * You can find documentation on the Raspberry Pi and python script in [documentation/Raspberry Pi.md](documentation/Raspberry%20Pi.md)
 * You can find information on how to deploy our software in [documentation/Deployment.md](documentation/Deployment.md)
 
