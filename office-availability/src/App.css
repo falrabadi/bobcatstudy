@@ -1,0 +1,654 @@
+/*------------------General css------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+/*------------------Table css------------------*/
+.search {
+  min-width: 450px;
+  height: 40px;
+}
+.room-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  border-color: gray;
+}
+
+.room-table thead tr {
+  background-color: #024230;
+  text-align: left;
+  color: rgb(255, 251, 251);
+  cursor: default;
+}
+
+/* makes table header unselectable */
+.room-table th {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 18px;
+}
+
+.room-table th,
+.room-table td {
+  padding: 12px 25px;
+  border-color: gray;
+}
+
+caption {
+  font-size: 15pt;
+}
+
+.favorite {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 15px 0;
+  background-color: transparent;
+  color: #024230;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+.favorited {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 15px 0;
+  color: rgb(246, 250, 11);
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.remove {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: 15px 0;
+  color: #024230;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.notifications {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: 15px 0;
+  color: #024230;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.notified {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 15px 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+.info-icons {
+  margin-right: 3px;
+}
+
+/*------------------Login css------------------*/
+.login {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #024230;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login .loginlogo{
+    display: flex;
+    justify-content: center;
+}
+
+.login .loginlogo img {
+	width: 450px;
+}
+
+.login .passreset {
+  color: white;
+  margin: 20px 0;
+  margin-top: -200px;
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+}
+
+.login button {
+  background-color: rgba(126, 126, 126, 0.9);
+  color: white;
+}
+
+.login button:disabled {
+  background: #999;
+  color: rgb(58, 58, 58);
+  cursor: not-allowed;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  margin-top: -50px;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(49, 49, 49, 0.9) 0%,
+    rgba(49, 49, 49, 0.9) 59%,
+    rgba(49, 49, 49, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login .loginContainer .passreset {
+  color: white;
+  margin: 20px 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+}
+
+.login .loginContainer .emaillabel {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer .loginlbl {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input[type=text] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer input[type=password] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .GoogleAuth label {
+  width: 100%;
+  text-align: center;
+  margin-top: -9px;
+}
+
+.login .loginContainer .btnContainer button {
+  margin: 20px 0 0 0;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.login .loginContainer input[type=checkbox]{
+  width: auto;
+}
+
+.login .loginContainer .chkboxlbl{
+  color: white;
+  margin-left: 10px;
+  font-size: 14px;
+  padding: auto;
+}
+
+.login .loginContainer .chkboxlbl .toslink{
+  text-decoration: none;
+  color: rgb(0, 192, 240);
+}
+
+/*------------------Nav css------------------*/
+.hero {
+  width: 100%;
+
+  min-height: 16vh;
+}
+
+.hero nav.desktop {
+  background: #024230;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.hero nav a.leftnav,
+.hero nav a.active {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 20px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  height: fit-content;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.hero nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.hero nav a.active {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/*------------------Right Side Nav css------------------*/
+.rightnav {
+  margin-left: auto;
+}
+
+.hero nav .navbtn {
+  display: inline-block;
+  text-align: center;
+  height: 45px;
+  width: 50px;
+  background: #155c48;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.hero nav .navbutn2 {
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+    width: 50px;
+    background: #155c48;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+.hero nav button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.nav-dropdown-button {
+  display: inline-block;
+}
+
+
+
+.acc-dropdown {
+  display: inline-block;
+}
+
+.accdropdown {
+  display: inline-block;
+}
+
+.dropdown {
+  border: 1px solid black;
+  color: white;
+  background: #024230;
+  position: absolute;
+  display: block;
+  top: 60px;
+  width: 250px;
+  transform: translateX(-75%);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.dropdown input {
+  width: 100%;
+}
+
+.dropdown-menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+nav .dropdown-menu-item button {
+  margin-left: auto;
+}
+
+.dropdown img {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.dropdown .checkbox {
+  width: 10%;
+  margin-right: auto;
+  margin-left: 0px;
+}
+
+.dropdown .icons .dropdown-menu-item {
+  margin-bottom: 0;
+}
+
+.dropdown .icons {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.hero .settingsbtn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/*--Edit Room Dropdown CSS--*/
+.editdropdown {
+  border: 1px solid black;
+  color: white;
+  background: #024230;
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.editdropdown input {
+  width: 100%;
+}
+
+.editdropdown img {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.editdropdown .checkbox {
+  width: 10%;
+  margin-right: auto;
+  margin-left: 0px;
+}
+
+.editdropdown .icons .dropdown-menu-item {
+  margin-bottom: 0;
+}
+
+.editdropdown .icons {
+  margin-bottom: 20px;
+}
+
+/*------------------Mobile Dropdown Nav css------------------*/
+.bm-item {
+  display: inline-block;
+
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  padding: 30px;
+  font-size: 30pt;
+}
+
+.current {
+  background-color: white;
+  color: #373a47;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*------------------About css------------------*/
+.about p {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.55em;
+  margin-bottom: 50px;
+}
+
+.about ul {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  font-size: 1.55em;
+}
+
+/*------------------Account Settings css------------------*/
+.settings .ttbtn {
+  margin-left: 600px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding: 20px;
+  margin-top: 5px;
+  text-align: center;
+  max-width: 700px;
+  color: black;
+  background-color: #e9e9ed;
+}
+
+.settings .ttbtn:hover {
+  background-color: #d0d0d7;
+}
+
+.img-ou {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-left: 650px;
+}
+
+/* This css is only applied to mobile devices */
+@media (max-width: 1000px)
+{
+  .settings a {
+    text-decoration: none;
+  }
+
+  .settings button.ttbtn {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*------------------Forgot Password css------------------*/
+.forgotpass .login{
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #024230;
+  display: flex;
+}
+
+/*------------------Terms of Service css------------------*/
+.tos {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #024230;
+  display: flex;
+}
+
+.tos .tosContainer {
+  padding: 30px;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(49, 49, 49, 0.9) 0%,
+    rgba(49, 49, 49, 0.9) 59%,
+    rgba(49, 49, 49, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.tos .tosContainer .tosdiv{
+  padding: 20px;
+  margin: auto;
+  overflow-y: auto;
+  max-width: 800px;
+  max-height: 800px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.container{
+  text-align: center;
+}
+
+.passchange{
+  text-align: center;
+  font-size: 1.50em;
+}

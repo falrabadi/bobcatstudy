@@ -1,0 +1,22 @@
+{
+  "name": "prog-paladins",
+  "version": "1.0.0",
+  "description": "This is a student project being worked on by the group Programming Paladins. Its goal is to create a website, iOS, and Android app that Ohio University students can use to find available study rooms. It will use sensors installed in various study rooms to determine if they are occupied or not and display that information on the website and mobile apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senior-design-21-22/prog-paladins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senior-design-21-22/prog-paladins/issues"
+  },
+  "homepage": "https://github.com/senior-design-21-22/prog-paladins#readme",
+  "dependencies": {
+    "socket.io": "^4.4.1"
+  }
+}
