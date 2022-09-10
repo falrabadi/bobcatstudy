@@ -4,14 +4,19 @@ This is a student project being worked on by the group Programming Paladins. Its
 
 The website can be found [here](http://bobcatstudy.net).
 
-Demo Account:
-Email: Demo@demo.com
+# Demo Account:
+```
+Email: Demo@demo.com  
 Password: Test1234
+```
 
 ### Website Preview
 
 #### Sign-up and Login Page
-![hero](./Images/Login.gif)
+![login](./Images/Login.gif)
+
+#### Hero Page
+![hero](./Images/Hero.gif)
 
 ## Documentation
 
