@@ -4,6 +4,15 @@ This is a student project being worked on by the group Programming Paladins. Its
 
 The website can be found [here](http://bobcatstudy.net).
 
+Demo Account:
+Email: Demo@demo.com
+Password: Test1234
+
+### Website Preview
+
+#### Sign-up and Login Page
+![hero](./Images/Login.gif)
+
 ## Documentation
 
 * You can find our SRS / Design document in [documentation/Programming Paladins - SRS and Design 1.3.docx](documentation/Programming%20Paladins%20-%20SRS%20and%20Design%201.3.docx)

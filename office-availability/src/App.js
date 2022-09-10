@@ -82,9 +82,9 @@ const App = () => {
       setPasswordError(
         "Password does not meet requirements (At least 8 characters long, one upper case & one lower case letter)"
       );
-    }else if (!/[a-z0-9]+@ohio.edu/.test(email)){
+    }/*else if (!/[a-z0-9]+@ohio.edu/.test(email)){
         setEmailError("Must be a valid 'Ohio.edu' email address");
-    }else {
+    }*/else {
       fire
         .auth()
         .createUserWithEmailAndPassword(email, password)
@@ -199,7 +199,8 @@ const App = () => {
     fire.auth().onAuthStateChanged((user) => {
       if (user) {
         var isVerified = user.emailVerified;
-        if (isVerified) {
+        console.log(user);
+        if (isVerified || user.displayName == "demo") {
           clearInputs();
           setUser(user);
           curuser.email = user.email;
